@@ -66,6 +66,20 @@ client.on('message', message =>{
         message.channel.send('i am in great pain');
     }else if(command === 'neckbone'){
         client.commands.get('neckbone').execute(message, args);
+    }else if(command === 'photosynthesis'){
+        message.channel.send({files: ['./images/sunlight.jpg']});
+    }else if(command === 'religion'){
+        message.channel.send({files: ['./images/religion.jpg']});
+    }else if(command === 'communism'){
+        message.channel.send({files: ['./images/communism.gif']});
+    }else if(command === 'evos'){
+        message.channel.send({files: ['./images/evos.jpg']});
+    }else if(command === 'hotewig'){
+        message.channel.send('https://youtu.be/xuCn8ux2gbs');
+    }else if(command === 'no'){
+        message.channel.send({files: ['./images/no.png']});
+    }else if(command === 'taste'){
+        message.channel.send({files: ['./images/taste.gif']});
     }
     
 });
