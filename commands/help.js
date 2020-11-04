@@ -27,7 +27,13 @@ module.exports = {
         const blanket = '|blanket';
         const legbone = '|legbone';
         const neckbone = '|neckbone';
-        const NO = '|NO'
+        const photosynthesis = '|photosynthesis';
+        const religion = '|religion';
+        const communism = '|communism';
+        const evos = '|evos';
+        const hotewig = '|hotewig';
+        const no = '|no';
+        const taste = '|taste';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -37,16 +43,23 @@ module.exports = {
         \n Permanent Commands: \
         \n ${blanket.padEnd(padding, '.')}there's a blanket \
         \n ${commandsStr.padEnd(padding, '.')}prints out this menu \
+        \n ${communism.padEnd(padding, '.')}in the soviet union \
+        \n ${evos.padEnd(padding, '.')}evil virus of satan \
         \n ${fuck.padEnd(padding, '.')}what are you waiting for \
         \n ${fucker.padEnd(padding, '.')}you fucker \
         \n ${garbage.padEnd(padding, '.')}still a piece of garbage \
         \n ${gneurshk.padEnd(padding, '.')}gneurshk \
         \n ${helpStr.padEnd(padding, '.')}prints out this menu \
+        \n ${hotewig.padEnd(padding, '.')}history of the entire world, i guess \
         \n ${lazer.padEnd(padding, '.')}a deadly lazer \
         \n ${legbone.padEnd(padding, '.')}the leg bone \
         \n ${neckbone.padEnd(padding, '.')}the neck bone \
+        \n ${no.padEnd(padding, '.')}why not? \
+        \n ${photosynthesis.padEnd(padding, '.')}tast the sun \
         \n ${ping.padEnd(padding, '.')}pong \
         \n ${pong.padEnd(padding, '.')}try it out \
+        \n ${religion.padEnd(padding, '.')}no don't \
+        \n ${taste.padEnd(padding, '.')}taste the sun \
         \n ${testStr.padEnd(padding, '.')}a simple test command \
         \n ${what.padEnd(padding, '.')}what \
         \n ${wiggle.padEnd(padding, '.')}prepare to wiggle :) \
