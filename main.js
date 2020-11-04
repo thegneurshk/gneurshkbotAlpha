@@ -71,4 +71,4 @@ client.on('message', message =>{
 });
 
 //last line
-client.login('NzY5NDQxMTE2MjEzNzM5NTUy.X5PD4Q.6U9FzNUOajxBL-UEy0F7z_A_S_E');
+client.login('');
