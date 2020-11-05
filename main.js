@@ -97,6 +97,16 @@ client.on('message', message =>{
         message.channel.send(`uhh ya, i sure hope it does`);
     }else if(command === 'ra' && args[0] === 'ra'){
         message.channel.send('rasputin');  
+    }else if(command === 'tweet'){
+        client.commands.get('tweet').execute(message, args);
+    }else if(command === 'bill' && args[0] === 'wurtz'){
+        client.commands.get('bill wurtz').execute(message, args);
+    }else if(command === 'carson'){
+        message.channel.send('https://twitter.com/CallMeCarsonYT');
+    }else if(command === 'papito'){
+        message.channel.send('https://twitter.com/pakalupapitow');
+    }else if(command === 'one' && args[0] === 'giant' && args[1] === 'onion'){
+        message.channel.send('https://www.youtube.com/channel/UCNXYrTl3Rc03bRBplYaz7yg');
     }
 
 });
