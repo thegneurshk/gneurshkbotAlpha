@@ -35,6 +35,7 @@ module.exports = {
         const speedtest = '|speedtest';
         const bubblewrap = '|bubblewrap';
         const empathy = '|empathy';
+        const noose = '|noose';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -58,6 +59,7 @@ module.exports = {
         \n ${legbone.padEnd(padding, '.')}the leg bone \
         \n ${neckbone.padEnd(padding, '.')}the neck bone \
         \n ${no.padEnd(padding, '.')}why not? \
+        \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
         \n ${photosynthesis.padEnd(padding, '.')}tast the sun \
         \n ${ping.padEnd(padding, '.')}pong \
         \n ${pong.padEnd(padding, '.')}try it out \
