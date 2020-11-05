@@ -36,6 +36,8 @@ module.exports = {
         const bubblewrap = '|bubblewrap';
         const empathy = '|empathy';
         const noose = '|noose';
+        const funney = '|funney';
+        const eczist = '|eczist';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -47,10 +49,12 @@ module.exports = {
         \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
         \n ${commandsStr.padEnd(padding, '.')}prints out this menu \
         \n ${communism.padEnd(padding, '.')}in the soviet union \
+        \n ${eczist.padEnd(padding, '.')}whi du thez eczist \
         \n ${empathy.padEnd(padding, '.')}empathy banana \
         \n ${evos.padEnd(padding, '.')}evil virus of satan \
         \n ${fuck.padEnd(padding, '.')}what are you waiting for \
         \n ${fucker.padEnd(padding, '.')}you fucker \
+        \n ${funney.padEnd(padding, '.')}funney \
         \n ${garbage.padEnd(padding, '.')}still a piece of garbage \
         \n ${gneurshk.padEnd(padding, '.')}gneurshk \
         \n ${helpStr.padEnd(padding, '.')}prints out this menu \
