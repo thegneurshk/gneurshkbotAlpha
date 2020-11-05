@@ -68,6 +68,8 @@ client.on('message', message =>{
     }else if (command === 'legbone'){
         message.channel.send('♫ the leg bone\'s connected to the arm bone ♫ ');
         message.channel.send('i am in great pain');
+    }else if(command === 'mental' && args[0] === 'breakdown'){
+        message.channel.send('it\'s a mental breakdown *off key kazoo*');
     }else if(command === 'neckbone'){
         client.commands.get('neckbone').execute(message, args);
     }else if(command === 'no'){
