@@ -36,6 +36,7 @@ module.exports = {
         const taste = '|taste';
         const speedtest = '|speedtest';
         const bubblewrap = '|bubblewrap';
+        const empathy = '|empathy';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -47,6 +48,7 @@ module.exports = {
         \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
         \n ${commandsStr.padEnd(padding, '.')}prints out this menu \
         \n ${communism.padEnd(padding, '.')}in the soviet union \
+        \n ${empathy.padEnd(padding, '.')}empathy banana \
         \n ${evos.padEnd(padding, '.')}evil virus of satan \
         \n ${fuck.padEnd(padding, '.')}what are you waiting for \
         \n ${fucker.padEnd(padding, '.')}you fucker \
