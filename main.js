@@ -80,7 +80,10 @@ client.on('message', message =>{
         message.channel.send({files: ['./images/no.png']});
     }else if(command === 'taste'){
         message.channel.send({files: ['./images/taste.gif']});
-    }
+    }else if(command === 'speedtest'){
+        message.channel.send('your internet speed is nyoooooom');
+    }else if(command === 'bubblewrap'){
+        client.commands.get('bubblewrap').execute(message, args);
     
 });
 
