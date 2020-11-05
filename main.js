@@ -92,6 +92,10 @@ client.on('message', message =>{
         message.channel.send('https://www.youtube.com/playlist?list=PLPoHPVSGv6h4Lj_yVhyCswGCySqK7Inqc');
     }else if(command === 'eczist'){
         message.channel.send('https://www.youtube.com/playlist?list=PLZFtpTfOvng3XrtVlJFw7Ax4zU63m8DIc');
+    }else if (command === 'road') {
+        if (args[0]==='work' && args[1] === 'ahead') {
+            return message.channel.send(`uhh ya, i sure hope it does`);
+        }
     }
 });
 
