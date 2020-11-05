@@ -5,11 +5,9 @@ module.exports = {
     execute(message, args){
 
         //temperary commands
-        //named 'help<letter>
         const helpA = '|election2020';
 
         //permanent commands
-        //named 'help<number>
         const gneurshk = '|gneurshk';
         const helpStr = '|help';
         const ping = '|ping';
