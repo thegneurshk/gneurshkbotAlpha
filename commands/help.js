@@ -42,6 +42,7 @@ module.exports = {
         const billwurtz = '|bill wurtz';
         const carson = '|carson';
         const onion = '|one giant onion';
+        const ce = '|ce';
         var padding = 20;
 
         if(args[0] === '1' || !args[0]){
@@ -53,6 +54,7 @@ module.exports = {
             \n ${blanket.padEnd(padding, '.')}there's a blanket \
             \n ${billwurtz.padEnd(padding, '.')}links to a specified bill wurtz website \
             \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
+            \n ${ce.padEnd(padding, '.')}\Casually Explained \
             \n ${carson.padEnd(padding, '.')}links to carson's twitter \
             \n ${communism.padEnd(padding, '.')}in the soviet union \
             \n ${eczist.padEnd(padding, '.')}whi du thez eczist \
@@ -68,13 +70,13 @@ module.exports = {
             \n ${legbone.padEnd(padding, '.')}the leg bone \
             \n ${neckbone.padEnd(padding, '.')}the neck bone \
             \n ${no.padEnd(padding, '.')}why not? \
-            \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
             \n
             \n Page 1/3 \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
         }else if(args[0] === '2'){
             message.channel.send(`\`\`\` \
+            \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
             \n ${onion.padEnd(padding, '.')}links to one giant onion's youtube \
             \n ${photosynthesis.padEnd(padding, '.')}taste the sun \
             \n ${ping.padEnd(padding, '.')}pong \
@@ -104,7 +106,7 @@ module.exports = {
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
             \n   Total commands: 33 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 35 \
+            \n   Permanent commands: 36 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
