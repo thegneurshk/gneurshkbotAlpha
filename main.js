@@ -54,7 +54,7 @@ client.on('message', message =>{
     }else if(command === 'fucker'){
         client.commands.get('fucker').execute(message, args);
     }else if(command === 'fuck'){
-        message.channel.send('what are you waiting for you dumb stupid fuck');
+        message.channel.send({files: ['./images/fuck.gif']});
     }else if(command === 'garbage'){
         message.channel.send({files: ["./images/garbage.jpg"]});
     }else if(command === 'lazer'){
