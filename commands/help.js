@@ -39,6 +39,7 @@ module.exports = {
         const speedtest = '|speedtest';
         const taste = '|taste';
         const testStr = '|test';
+        const tumblr = '|tumblr';
         const tweet = '|tweet';
         const what = '|what';
         const wiggle = '|wiggle';
@@ -92,7 +93,8 @@ module.exports = {
             \n ${speedtest.padEnd(padding, '.')}what is your internet speed? \
             \n ${taste.padEnd(padding, '.')}taste the sun \
             \n ${testStr.padEnd(padding, '.')}a simple test command \
-            \n ${tweet.padEnd(padding, '.')}when specified, sends a tweet\
+            \n ${tumblr.padEnd(padding, '.')}randomly quotes tumblr posts \
+            \n ${tweet.padEnd(padding, '.')}when specified, sends a tweet \
             \n\t\t\t\t\t from bill wurtz, carson, or pakalu papito \
             \n ${what.padEnd(padding, '.')}what \
             \n ${wiggle.padEnd(padding, '.')}prepare to wiggle :) \
@@ -109,10 +111,10 @@ module.exports = {
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 38 \
+            \n   Total commands: 39 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 37 \
-            \n   Total files: 23 \
+            \n   Permanent commands: 38 \
+            \n   Total files: 24 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
