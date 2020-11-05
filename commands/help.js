@@ -25,6 +25,7 @@ module.exports = {
         const hotewig = '|hotewig';
         const lazer = '|lazer';
         const legbone = '|legbone';
+        const mental = '|mental breakdown';
         const neckbone = '|neckbone';
         const no = '|no';
         const noose = '|noose';
@@ -70,14 +71,15 @@ module.exports = {
             \n ${hotewig.padEnd(padding, '.')}history of the entire world, i guess \
             \n ${lazer.padEnd(padding, '.')}a deadly lazer \
             \n ${legbone.padEnd(padding, '.')}the leg bone \
+            \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
             \n ${neckbone.padEnd(padding, '.')}the neck bone \
-            \n ${no.padEnd(padding, '.')}why not? \
             \n
             \n Page 1/3 \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
         }else if(args[0] === '2'){
             message.channel.send(`\`\`\` \
+            \n ${no.padEnd(padding, '.')}why not? \
             \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
             \n ${onion.padEnd(padding, '.')}links to one giant onion's youtube \
             \n ${papito.padEnd(padding, '.')}pakalu papito \
@@ -107,9 +109,9 @@ module.exports = {
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 37 \
+            \n   Total commands: 38 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 36 \
+            \n   Permanent commands: 37 \
             \n   Total files: 23 \
             \n   Total images: 12 \
             \n   Language: english \
