@@ -107,6 +107,7 @@ module.exports = {
             \n   Total commands: 36 \
             \n   Temporary commands: 1 \
             \n   Permanent commands: 35 \
+            \n   Total files: 23 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
