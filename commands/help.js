@@ -73,7 +73,7 @@ module.exports = {
             \n ${legbone.padEnd(padding, '.')}the leg bone \
             \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
             \n ${neckbone.padEnd(padding, '.')}the neck bone \
-            \n
+            \n \
             \n Page 1/3 \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
