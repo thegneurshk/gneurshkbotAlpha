@@ -39,10 +39,12 @@ client.on('message', message =>{
         client.commands.get('bill wurtz').execute(message, args);
     }else if(command === 'bubblewrap'){
         client.commands.get('bubblewrap').execute(message, args);
-    }else if(command === 'ce'){
-        client.commands.get('ce').execute(message, args);
+    }else if(command === 'calc'){
+        client.commands.get('calc').execute(message, args);
     }else if(command === 'carson'){
         message.channel.send('https://twitter.com/CallMeCarsonYT');
+    }else if(command === 'ce'){
+        client.commands.get('ce').execute(message, args);
     }else if(command === 'communism'){
         message.channel.send({files: ['./images/communism.gif']});
     }else if(command === 'eczist'){
