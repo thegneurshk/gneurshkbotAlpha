@@ -11,6 +11,7 @@ module.exports = {
         const billwurtz = '|bill wurtz';
         const blanket = '|blanket';
         const bubblewrap = '|bubblewrap';
+        const calc = '|calc';
         const carson = '|carson';
         const ce = '|ce';
         const communism = '|communism';
@@ -48,6 +49,7 @@ module.exports = {
         
         const papito = '|papito';
         var padding = 20;
+        var totalPages = 4;
 
         if(args[0] === '1' || !args[0]){
             message.channel.send(`\`\`\` \
@@ -58,6 +60,7 @@ module.exports = {
             \n ${billwurtz.padEnd(padding, '.')}links to a specified bill wurtz website \
             \n ${blanket.padEnd(padding, '.')}there's a blanket \
             \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
+            \n ${calc.padEnd(padding, '.')}a basic calculator \
             \n ${carson.padEnd(padding, '.')}links to carson's twitter \
             \n ${ce.padEnd(padding, '.')}\Casually Explained \
             \n ${communism.padEnd(padding, '.')}in the soviet union \
@@ -73,13 +76,13 @@ module.exports = {
             \n ${lazer.padEnd(padding, '.')}a deadly lazer \
             \n ${legbone.padEnd(padding, '.')}the leg bone \
             \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
-            \n ${neckbone.padEnd(padding, '.')}the neck bone \
             \n \
-            \n Page 1/3 \
+            \n Page 1/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
         }else if(args[0] === '2'){
             message.channel.send(`\`\`\` \
+            \n ${neckbone.padEnd(padding, '.')}the neck bone \
             \n ${no.padEnd(padding, '.')}why not? \
             \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
             \n ${onion.padEnd(padding, '.')}links to one giant onion's youtube \
@@ -101,24 +104,31 @@ module.exports = {
             \n ${wolfie.padEnd(padding, '.')}sends the link to wolframAlpha \
             \n ${yeehaw.padEnd(padding, '.')}yeehaw :) \
             \n \
-            \n Page ${args[0]}/3 \
+            \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\` `);
         }else if(args[0] === '3'){
+            message.channel.send(` \`\`\` \
+            \n \
+            \n Page ${args[0]}/${totalPages} \
+            \n type '|help <page number>' to go to a specific page \
+            \`\`\` `)
+        }
+        else if(args[0] === '4'){
             message.channel.send(` \`\`\` \
             \n Info: \
             \n   Name: gneurshkbotAlpha#3939 \
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 39 \
+            \n   Total commands: 40 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 38 \
-            \n   Total files: 24 \
+            \n   Permanent commands: 39 \
+            \n   Total files: 25 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
-            \n Page ${args[0]}/3 \
+            \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\` `)
         };
