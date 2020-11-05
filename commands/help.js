@@ -8,41 +8,43 @@ module.exports = {
         const helpA = '|election2020';
 
         //permanent commands
+        const billwurtz = '|bill wurtz';
+        const blanket = '|blanket';
+        const bubblewrap = '|bubblewrap';
+        const carson = '|carson';
+        const ce = '|ce';
+        const communism = '|communism';
+        const eczist = '|eczist';
+        const empathy = '|empathy';
+        const evos = '|evos';
+        const fuck = '|fuck';
+        const funney = '|funney';
+        const garbage = '|garbage';
         const gneurshk = '|gneurshk';
         const helpStr = '|help';
-        const ping = '|ping';
-        const testStr = '|test';
-        const what = '|what';
-        const wolfie = '|wolfie';
-        const pong = '|pong';
-        const wiggle = '|wiggle';
-        const yeehaw = '|yeehaw';
-        const fuck = '|fuck';
-        const garbage = '|garbage';
+        const hotewig = '|hotewig';
         const lazer = '|lazer';
-        const blanket = '|blanket';
         const legbone = '|legbone';
         const neckbone = '|neckbone';
-        const photosynthesis = '|photosynthesis';
-        const religion = '|religion';
-        const communism = '|communism';
-        const evos = '|evos';
-        const hotewig = '|hotewig';
         const no = '|no';
-        const taste = '|taste';
-        const speedtest = '|speedtest';
-        const bubblewrap = '|bubblewrap';
-        const empathy = '|empathy';
         const noose = '|noose';
-        const funney = '|funney';
-        const eczist = '|eczist';
-        const rwa = '|road work ahead';
-        const rr = '|ra ra';
-        const tweet = '|tweet';
-        const billwurtz = '|bill wurtz';
-        const carson = '|carson';
         const onion = '|one giant onion';
-        const ce = '|ce';
+        const photosynthesis = '|photosynthesis';
+        const ping = '|ping';
+        const pong = '|pong';
+        const rr = '|ra ra';
+        const religion = '|religion';
+        const rwa = '|road work ahead';
+        const speedtest = '|speedtest';
+        const taste = '|taste';
+        const testStr = '|test';
+        const tweet = '|tweet';
+        const what = '|what';
+        const wiggle = '|wiggle';
+        const wolfie = '|wolfie';
+        const yeehaw = '|yeehaw';
+        
+        const papito = '|papito';
         var padding = 20;
 
         if(args[0] === '1' || !args[0]){
@@ -51,11 +53,11 @@ module.exports = {
             \n ${helpA.padEnd(padding, '.')}links to the current polls \
             \n \
             \n Permanent Commands: \
-            \n ${blanket.padEnd(padding, '.')}there's a blanket \
             \n ${billwurtz.padEnd(padding, '.')}links to a specified bill wurtz website \
+            \n ${blanket.padEnd(padding, '.')}there's a blanket \
             \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
-            \n ${ce.padEnd(padding, '.')}\Casually Explained \
             \n ${carson.padEnd(padding, '.')}links to carson's twitter \
+            \n ${ce.padEnd(padding, '.')}\Casually Explained \
             \n ${communism.padEnd(padding, '.')}in the soviet union \
             \n ${eczist.padEnd(padding, '.')}whi du thez eczist \
             \n ${empathy.padEnd(padding, '.')}empathy banana \
@@ -78,6 +80,7 @@ module.exports = {
             message.channel.send(`\`\`\` \
             \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
             \n ${onion.padEnd(padding, '.')}links to one giant onion's youtube \
+            \n ${papito.padEnd(padding, '.')}pakalu papito \
             \n ${photosynthesis.padEnd(padding, '.')}taste the sun \
             \n ${ping.padEnd(padding, '.')}pong \
             \n ${pong.padEnd(padding, '.')}try it out \
@@ -104,9 +107,9 @@ module.exports = {
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 36 \
+            \n   Total commands: 37 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 35 \
+            \n   Permanent commands: 36 \
             \n   Total files: 23 \
             \n   Total images: 12 \
             \n   Language: english \
