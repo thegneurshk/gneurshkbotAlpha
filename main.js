@@ -86,6 +86,8 @@ client.on('message', message =>{
         client.commands.get('bubblewrap').execute(message, args);
     }else if(command === 'empathy'){
         message.channel.send('have an empathy banana', {files: ['./images/banana.jpg']});
+    }else if(command === 'noose'){
+        message.channel.send('https://youtu.be/VJe6LLoGgR8');
     }
 });
 
