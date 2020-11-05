@@ -3,8 +3,8 @@ discord bot
 
 Info:
 
-\tName: gneurshkbotAlpha#3939
+    Name: gneurshkbotAlpha#3939
 
-\tDate Created: 03/11/2020, Tuesday
+    Date Created: 03/11/2020, Tuesday
 
-\tLanguage: English
+    Language: English
