@@ -98,6 +98,8 @@ client.on('message', message =>{
         message.channel.send({files: ['./images/taste.gif']});
     }else if(command === 'test') {
         client.commands.get('test').execute(message, args);
+    }else if(command === 'tumblr'){
+        client.commands.get('tumblr').execute(message, args);
     }else if(command === 'tweet'){
         client.commands.get('tweet').execute(message, args);
     }else if(command === 'what') {
