@@ -52,8 +52,6 @@ client.on('message', message =>{
         message.delete();
     }else if(command === 'yeehaw'){
         client.commands.get('yeehaw').execute(message, args);
-    }else if(command === 'fucker'){
-        client.commands.get('fucker').execute(message, args);
     }else if(command === 'fuck'){
         message.channel.send({files: ['./images/fuck.gif']});
     }else if(command === 'garbage'){
