@@ -39,6 +39,7 @@ module.exports = {
         const funney = '|funney';
         const eczist = '|eczist';
         const rwa = '|road work ahead';
+        const rr = '|ra ra';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -68,9 +69,10 @@ module.exports = {
         \n ${photosynthesis.padEnd(padding, '.')}tast the sun \
         \n ${ping.padEnd(padding, '.')}pong \
         \n ${pong.padEnd(padding, '.')}try it out \
-        \n ${speedtest.padEnd(padding, '.')}what is your internet speed? \
+        \n ${rr.padEnd(padding, '.')}rasputin \
         \n ${religion.padEnd(padding, '.')}no don't \
         \n ${rwa.padEnd(padding, '.')}road work ahead? \
+        \n ${speedtest.padEnd(padding, '.')}what is your internet speed? \
         \n ${taste.padEnd(padding, '.')}taste the sun \
         \n ${testStr.padEnd(padding, '.')}a simple test command \
         \n ${what.padEnd(padding, '.')}what \
