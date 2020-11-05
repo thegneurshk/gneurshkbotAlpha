@@ -88,6 +88,10 @@ client.on('message', message =>{
         message.channel.send('have an empathy banana', {files: ['./images/banana.jpg']});
     }else if(command === 'noose'){
         message.channel.send('https://youtu.be/VJe6LLoGgR8');
+    }else if(command === 'funney'){
+        message.channel.send('https://www.youtube.com/playlist?list=PLPoHPVSGv6h4Lj_yVhyCswGCySqK7Inqc');
+    }else if(command === 'eczist'){
+        message.channel.send('https://www.youtube.com/playlist?list=PLZFtpTfOvng3XrtVlJFw7Ax4zU63m8DIc');
     }
 });
 
