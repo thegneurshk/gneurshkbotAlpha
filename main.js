@@ -98,9 +98,7 @@ client.on('message', message =>{
     }else if(command === 'ra' && args[0] === 'ra'){
         message.channel.send('rasputin');  
     }
-    
-    
-});
+
 });
 
 //last line
