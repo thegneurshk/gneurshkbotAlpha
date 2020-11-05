@@ -104,9 +104,9 @@ module.exports = {
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 33 \
+            \n   Total commands: 36 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 36 \
+            \n   Permanent commands: 35 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
