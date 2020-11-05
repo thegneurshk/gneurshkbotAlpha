@@ -84,7 +84,9 @@ client.on('message', message =>{
         message.channel.send('your internet speed is nyoooooom');
     }else if(command === 'bubblewrap'){
         client.commands.get('bubblewrap').execute(message, args);
-    
+    }else if(command === 'empathy'){
+        message.channel.send('have an empathy banana', {files: ['./images/banana.jpg']});
+    }
 });
 
 //last line
