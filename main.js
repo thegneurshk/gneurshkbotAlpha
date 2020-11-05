@@ -105,6 +105,8 @@ client.on('message', message =>{
         message.channel.send('https://twitter.com/pakalupapitow');
     }else if(command === 'one' && args[0] === 'giant' && args[1] === 'onion'){
         message.channel.send('https://www.youtube.com/channel/UCNXYrTl3Rc03bRBplYaz7yg');
+    }else if(command === 'ce'){
+        client.commands.get('ce').execute(message, args);
     }
 
 });
