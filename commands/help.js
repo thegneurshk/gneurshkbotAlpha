@@ -34,6 +34,8 @@ module.exports = {
         const hotewig = '|hotewig';
         const no = '|no';
         const taste = '|taste';
+        const speedtest = '|speedtest';
+        const bubblewrap = '|bubblewrap';
         var padding = 20;
 
         message.channel.send(`\`\`\` \
@@ -42,6 +44,7 @@ module.exports = {
         \n \
         \n Permanent Commands: \
         \n ${blanket.padEnd(padding, '.')}there's a blanket \
+        \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
         \n ${commandsStr.padEnd(padding, '.')}prints out this menu \
         \n ${communism.padEnd(padding, '.')}in the soviet union \
         \n ${evos.padEnd(padding, '.')}evil virus of satan \
@@ -58,6 +61,7 @@ module.exports = {
         \n ${photosynthesis.padEnd(padding, '.')}tast the sun \
         \n ${ping.padEnd(padding, '.')}pong \
         \n ${pong.padEnd(padding, '.')}try it out \
+        \n ${speedtest.padEnd(padding, '.')}what is your internet speed? \
         \n ${religion.padEnd(padding, '.')}no don't \
         \n ${taste.padEnd(padding, '.')}taste the sun \
         \n ${testStr.padEnd(padding, '.')}a simple test command \
