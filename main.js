@@ -109,6 +109,8 @@ client.on('message', message =>{
     }else if(command === 'wiggle') {
         client.commands.get('wiggle').execute(message, args);
         message.delete();
+    }else if(command === 'wiggle2'){
+        client.commands.get('wiggle2').execute(message, args);
     }else if(command === 'wolfie') {
         message.channel.send('https://www.wolframalpha.com');
     }else if(command === 'yeehaw'){
