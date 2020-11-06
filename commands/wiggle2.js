@@ -9,7 +9,6 @@ module.exports = {
         freq = args[3];
 
         var len = text.length - 1;
-        var check = amp * (duration + len);
 
         output = "";
         for (i = 0; i < duration; i++) {
