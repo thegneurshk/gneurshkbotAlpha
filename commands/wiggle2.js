@@ -4,10 +4,11 @@ module.exports = {
     execute(message, args){
 
         text = args[0];
-        var len = text.length;
         duration = args[1];
         amp = args[2];
         freq = args[3];
+        
+        var len = text.length;
         var check = amp * (duration + len);
 
         if(check > 2000){
