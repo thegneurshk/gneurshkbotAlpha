@@ -10,6 +10,7 @@ module.exports = {
         //permanent commands
         const billwurtz = '|bill wurtz';
         const blanket = '|blanket';
+        const bongocat = '|bongocat';
         const bubblewrap = '|bubblewrap';
         const calc = '|calc';
         const carson = '|carson';
@@ -31,6 +32,7 @@ module.exports = {
         const no = '|no';
         const noose = '|noose';
         const onion = '|one giant onion';
+        const papito = '|papito';
         const photosynthesis = '|photosynthesis';
         const ping = '|ping';
         const pong = '|pong';
@@ -44,10 +46,9 @@ module.exports = {
         const tweet = '|tweet';
         const what = '|what';
         const wiggle = '|wiggle';
+        const wiggle2 = '|wiggle2';
         const wolfie = '|wolfie';
         const yeehaw = '|yeehaw';
-        
-        const papito = '|papito';
         var padding = 20;
         var totalPages = 4;
 
@@ -58,6 +59,7 @@ module.exports = {
             \n \
             \n Permanent Commands: \
             \n ${billwurtz.padEnd(padding, '.')}links to a specified bill wurtz website \
+            \n ${bongocat.padEnd(padding, '.')}bongo cat \
             \n ${blanket.padEnd(padding, '.')}there's a blanket \
             \n ${bubblewrap.padEnd(padding, '.')}have fun popping \
             \n ${calc.padEnd(padding, '.')}a basic calculator \
@@ -75,13 +77,14 @@ module.exports = {
             \n ${hotewig.padEnd(padding, '.')}history of the entire world, i guess \
             \n ${lazer.padEnd(padding, '.')}a deadly lazer \
             \n ${legbone.padEnd(padding, '.')}the leg bone \
-            \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
+            
             \n \
             \n Page 1/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
         }else if(args[0] === '2'){
             message.channel.send(`\`\`\` \
+            \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
             \n ${neckbone.padEnd(padding, '.')}the neck bone \
             \n ${no.padEnd(padding, '.')}why not? \
             \n ${noose.padEnd(padding, '.')}a family-friendly noose song \
@@ -101,14 +104,16 @@ module.exports = {
             \n\t\t\t\t\t from bill wurtz, carson, or pakalu papito \
             \n ${what.padEnd(padding, '.')}what \
             \n ${wiggle.padEnd(padding, '.')}prepare to wiggle :) \
-            \n ${wolfie.padEnd(padding, '.')}sends the link to wolframAlpha \
-            \n ${yeehaw.padEnd(padding, '.')}yeehaw :) \
+            \n ${wiggle2.padEnd(padding, '.')}like wiggle, but takes userinput \
+            \n\t\t\t\t\t in the form of <text> <duration> <amplitude> <frequency> \
             \n \
             \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\` `);
         }else if(args[0] === '3'){
             message.channel.send(` \`\`\` \
+            \n ${wolfie.padEnd(padding, '.')}sends the link to wolframAlpha \
+            \n ${yeehaw.padEnd(padding, '.')}yeehaw :) \
             \n \
             \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
@@ -121,10 +126,10 @@ module.exports = {
             \n   Date created: 03/11/2020, tuesday \
             \n   Last modified: 05/11,2020, thursday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 40 \
+            \n   Total commands: 42 \
             \n   Temporary commands: 1 \
-            \n   Permanent commands: 39 \
-            \n   Total files: 25 \
+            \n   Permanent commands: 41 \
+            \n   Total files: 26 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
