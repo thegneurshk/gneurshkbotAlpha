@@ -50,7 +50,7 @@ module.exports = {
         `**the eight stages of grief:** \ndenial \nanger \nbargaining \nacceptance \nfrench \ndenial 2 \nastral projection`,
         `**how canadians make tea** \nthe same as you idiot \n....until we get it nice and warm, then we grab the maple syrup`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
-        message.channel.send(randomPost);
-        //message.channel.send(posts[posts.length - 1]);
+        //message.channel.send(randomPost);
+        message.channel.send(posts[posts.length - 1]);
     }
 }
