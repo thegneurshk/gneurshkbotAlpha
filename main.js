@@ -33,10 +33,12 @@ client.on('message', message =>{
     //commands
     if(command === 'election2020') {
         message.channel.send('https://www.270towin.com');
-    }else if(command === 'blanket'){
-        message.channel.send({files: ["./images/blanket.png"]});
     }else if(command === 'bill' && args[0] === 'wurtz'){
         client.commands.get('bill wurtz').execute(message, args);
+    }else if(command === 'blanket'){
+        message.channel.send({files: ["./images/blanket.png"]});
+    }else if(command === 'bongocat'){
+        message.channel.send('https://www.bongo.cat/');
     }else if(command === 'bubblewrap'){
         client.commands.get('bubblewrap').execute(message, args);
     }else if(command === 'calc'){
