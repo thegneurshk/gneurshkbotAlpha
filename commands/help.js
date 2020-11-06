@@ -49,6 +49,11 @@ module.exports = {
         const wiggle2 = '|wiggle2';
         const wolfie = '|wolfie';
         const yeehaw = '|yeehaw';
+
+        //mod commands
+        const kick = '|kick';
+        const ban = '|ban';
+
         var padding = 20;
         var totalPages = 4;
 
@@ -124,18 +129,29 @@ module.exports = {
             \n Info: \
             \n   Name: gneurshkbotAlpha#3939 \
             \n   Date created: 03/11/2020, tuesday \
-            \n   Last modified: 05/11,2020, thursday \
+            \n   Last modified: 06/11,2020, friday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 42 \
+            \n   Total commands: 44 \
             \n   Temporary commands: 1 \
             \n   Permanent commands: 41 \
-            \n   Total files: 26 \
+            \n   Administrator commands: 2 \
+            \n   Total files: 28 \
             \n   Total images: 12 \
             \n   Language: english \
             \n \
             \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\` `)
-        };
+        }
+        else if((args[0] === '5' || args[0] === 'admin') && message.member.hasPermission("ADMINISTRATOR")){
+            message.author.send(` \`\`\`
+            \n Admin commands: \
+            \n ${kick.padEnd(padding, '.')}kicks a mentioned user \
+            \n ${ban.padEnd(padding, '.')}bans a mentioned user \
+            \n \
+            \n only users with the admin permission can open this page \
+            \n type '|help <page number>' to go to a specific page \
+            \`\`\` `)
+        }
     }
 }
