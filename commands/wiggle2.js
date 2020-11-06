@@ -21,10 +21,8 @@ module.exports = {
             output += line + "\n";
         }
         if(output.length > 2000) {
-            console.log(output.length);
             message.send.channel('exceeds 2000 character limit');
         }else{
-            console.log(output.length);
             message.channel.send(output);
         }
     }
