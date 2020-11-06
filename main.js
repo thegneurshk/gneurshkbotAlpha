@@ -119,6 +119,10 @@ client.on('message', message =>{
         message.channel.send('https://www.wolframalpha.com');
     }else if(command === 'yeehaw'){
         client.commands.get('yeehaw').execute(message, args);
+    }else if(command === 'kick' && message.member.hasPermission("ADMINISTRATOR")){
+        client.commands.get('kick').execute(message, args);
+    }else if(command === 'ban' && message.member.hasPermission("ADMINISTRATOR")){
+        client.commands.get('ban').execute(message, args);
     }
 });
 
