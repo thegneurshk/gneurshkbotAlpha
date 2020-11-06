@@ -42,7 +42,13 @@ module.exports = {
         `\'dirty\' is a concept invented by british imperialists to keep you from enjoying god's nectar: swamp water`,
         'ah, the ol\' scream\'n\'sleep',
         `politics are a nightmare \ni\'m going to the scottish highlands to eat dirt and lavender`, 
-        `boxes inhale boxygen and exhale cardboard dioxide`];
+        `boxes inhale boxygen and exhale cardboard dioxide`,
+        `IT\'S THE \n***FINAL BRAIN CELL*** \n*kazoo solo*`,
+        `i just have one braincell and it bounces around my skull like a windows screensaver \
+        \nwhen it bounces perfectly in a corner i experience a thought`,
+        `brits over the age of 18 are not adults; they are children with scissor permits`,
+        `**the eight stages of grief:** \ndenial \nanger \nbargaining \nacceptance \nfrench \ndenial 2 \nastral projection`,
+        `**how canadians make tea** \nthe same as you idiot \n....until we get it nice and warm, then we grab the maple syrup`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
