@@ -4,21 +4,26 @@ module.exports = {
     execute(message, args){
 
         text = args[0];
+        var len = text.length;
         duration = args[1];
         amp = args[2];
         freq = args[3];
+        var check = amp * (duration + len);
 
-        output = "";
-
-        for (i = 0; i < duration; i++) {
-            line = "";
-            for (j = 0; j < (1-Math.cos(i*freq))*amp; j++) {
-                line += " ";
+        if(check > 2000){
+            message.channel.send('exceeds max of 2000 characters');
+        } else {
+            output = "";
+            for (i = 0; i < duration; i++) {
+                line = "";
+                for (j = 0; j < (1-Math.cos(i*freq))*amp; j++) {
+                    line += " ";
+                }
+                line += text;
+                output += line + "\n";
             }
-            line += text;
-        output += line + "\n";
+            message.channel.send(output);
         }
-    console.log(output);
-    message.channel.send(output);
+    
     }
 }
