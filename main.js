@@ -65,6 +65,8 @@ client.on('message', message =>{
         client.commands.get('help').execute(message, args);
     }else if(command === 'hotewig'){
         message.channel.send('https://youtu.be/xuCn8ux2gbs');
+    }else if(command === 'i' && args[0] === 'love' && args[1] === 'this' && args[2] === 'bot!' && args[3] === 'we' && args[4] === 'finish' && args[5] === 'eachother\'s'){
+        message.channel.send('SANDWICHES!!! nomnomnomnomnom!!!')
     }else if(command === 'lazer'){
         message.channel.send({files:["./images/lazer.jpg"]});
     }else if (command === 'legbone'){
