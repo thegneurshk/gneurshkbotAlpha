@@ -3,7 +3,7 @@ module.exports = {
     description: "quotes tumblr posts",
     execute(message, args){
         const posts = [`can we all stop pretending that life is fun or even\
-        \ntolerable i want to start being insane in public`,
+        tolerable i want to start being insane in public`,
         `you call it really bad at darts \ni call it freestyle acupuncture`,
         'what if mayonnaise came in cans',
         'the opposite of formaldehyde is casualdejekyll',
@@ -21,7 +21,7 @@ module.exports = {
         'funks go e y y man kill zucchini angst',
         'everytime i move i crunch like popcorn \nand everytime we kiss i swear i could fly',
         'i got a rare condiiton \ni got a glass dick and paper balls \
-        \neverytime i jump my dick just shatters and my nuts turn into origami aper cranes and fly away \
+        \neverytime i jump my dick just shatters and my nuts turn into origami paper cranes and fly away \
         \nand everytime we kiss i swear i could fly',
         'everytime i touch my dick i start to bleed \nand everytime we kiss i swear i could fly',
         'everytime i jump my dick hits me in the face and i die \nand everytime we kiss i swear i could fly',
@@ -48,9 +48,11 @@ module.exports = {
         \nwhen it bounces perfectly in a corner i experience a thought`,
         `brits over the age of 18 are not adults; they are children with scissor permits`,
         `**the eight stages of grief:** \ndenial \nanger \nbargaining \nacceptance \nfrench \ndenial 2 \nastral projection`,
-        `**how canadians make tea** \nthe same as you idiot \n....until we get it nice and warm, then we grab the maple syrup`];
+        `**how canadians make tea** \nthe same as you idiot \n....until we get it nice and warm, then we grab the maple syrup`,
+        `just lie down on the sidewalk with your tongue against the concrete until the whole world dissolves like an uncoated pill`,
+        `*to the tune of YMCA* \ncomrade, steel production is down \ni said comrade, you must sleep on the ground`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
-        //message.channel.send(randomPost);
-        message.channel.send(posts[posts.length - 1]);
+        message.channel.send(randomPost);
+        //message.channel.send(posts[posts.length - 1]);
     }
 }
