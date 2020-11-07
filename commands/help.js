@@ -51,8 +51,8 @@ module.exports = {
         const yeehaw = '|yeehaw';
 
         //mod commands
-        const kick = '|kick';
         const ban = '|ban';
+        const kick = '|kick';
 
         var padding = 20;
         var totalPages = 4;
@@ -146,8 +146,8 @@ module.exports = {
         else if((args[0] === '5' || args[0] === 'admin') && message.member.hasPermission("ADMINISTRATOR")){
             message.author.send(` \`\`\`
             \n Admin commands: \
-            \n ${kick.padEnd(padding, '.')}kicks a mentioned user \
             \n ${ban.padEnd(padding, '.')}bans a mentioned user \
+            \n ${kick.padEnd(padding, '.')}kicks a mentioned user \
             \n \
             \n only users with the admin permission can open this page \
             \n type '|help <page number>' to go to a specific page \
