@@ -129,7 +129,7 @@ module.exports = {
             \n Info: \
             \n   Name: gneurshkbotAlpha#3939 \
             \n   Date created: 03/11/2020, tuesday \
-            \n   Last modified: 06/11,2020, friday \
+            \n   Last modified: 07/11,2020, saturday \
             \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
             \n   Total commands: 44 \
             \n   Temporary commands: 1 \
