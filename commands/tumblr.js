@@ -8,7 +8,7 @@ module.exports = {
         'what if mayonnaise came in cans',
         'the opposite of formaldehyde is casualdejekyll',
         'what do teens like?!? is it memes? memes about skeletons? piss? communism?',
-        '☭w☭ what\'s this \nglomps the means of production', 
+        '☭w☭ what\'s this \n*glomps the means of production*', 
         '*sloshes boogishly towards you at immense speeds*',
         `\"you\'ve got ghosts in your blood, you should do cocaine about it\" \
         \n well fuck me, i've got goblins in my nerves, i'm gonna do sleep deprivation about it`,
@@ -50,8 +50,10 @@ module.exports = {
         `**the eight stages of grief:** \ndenial \nanger \nbargaining \nacceptance \nfrench \ndenial 2 \nastral projection`,
         `**how canadians make tea** \nthe same as you idiot \n....until we get it nice and warm, then we grab the maple syrup`,
         `just lie down on the sidewalk with your tongue against the concrete until the whole world dissolves like an uncoated pill`,
-        `*to the tune of YMCA* \ncomrade, steel production is down \ni said comrade, you must sleep on the ground`];
-        const randomPost = posts[Math.floor(Math.random() * posts.length)];
+        `*to the tune of YMCA* \ncomrade, steel production is down \ni said comrade, you must sleep on the ground`,
+        `2020 is a scam invented by historians to sell more history`,
+        `gender is a scam invented by bathroom companies to sell more bathrooms`,
+        `they got that they/them þussy`];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
     }
