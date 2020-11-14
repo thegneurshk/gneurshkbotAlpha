@@ -2,8 +2,7 @@ module.exports = {
     name: 'tumblr',
     description: "quotes tumblr posts",
     execute(message, args){
-        const posts = [`can we all stop pretending that life is fun or even\
-        tolerable i want to start being insane in public`,
+        const posts = [`can we all stop pretending that life is fun or even tolerable i want to start being insane in public`,
         `you call it really bad at darts \ni call it freestyle acupuncture`,
         'what if mayonnaise came in cans',
         'the opposite of formaldehyde is casualdejekyll',
@@ -53,7 +52,19 @@ module.exports = {
         `*to the tune of YMCA* \ncomrade, steel production is down \ni said comrade, you must sleep on the ground`,
         `2020 is a scam invented by historians to sell more history`,
         `gender is a scam invented by bathroom companies to sell more bathrooms`,
-        `they got that they/them þussy`];
+        `they got that they/them þussy`,
+        'i see you survived the toilet',
+        'i am going to make fun of thunder for being off-key',
+        'remind me to come to your house and shred your shoes',
+        `what do you call a flirty greek philosopher? \na socratease`,
+        `it\'s quick, it\'s easy, and it\'s free: pouring river water in your socks`,
+        `**the year is 9** \nsome motherfucker be touching cow tits, and oh boy, he\'s about to invent cereal`,
+        `welcome to my yeet and greet`,
+        `bone massage \ni want soft bones`,
+        `image if every signle person in the world simultaneously said \'mayonnaise\'`,
+        `old people? more like fold people! *makes an origami swan out of grandma*`,
+        `you can't spell american dream without \'eric andre\' in the middle`,
+        `remeber: you can't spell valentine's day without \'anal destiny\'`];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
     }
