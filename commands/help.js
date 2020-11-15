@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js')
+
 module.exports = {
     name: 'help',
     description: "this command prints out all commands",
@@ -6,6 +8,7 @@ module.exports = {
 
         //temperary commands
         const helpA = '|election2020';
+        const embedA = '|embed';
 
         //permanent commands
         const billwurtz = '|bill wurtz';
@@ -50,7 +53,7 @@ module.exports = {
         const wolfie = '|wolfie';
         const yeehaw = '|yeehaw';
 
-        //mod commands
+        //administrator commands
         const ban = '|ban';
         const kick = '|kick';
 
@@ -61,6 +64,7 @@ module.exports = {
             message.channel.send(`\`\`\` \
             \n Temporary Commands: \
             \n ${helpA.padEnd(padding, '.')}links to the current polls \
+            \n ${embedA.padEnd(padding, '.')}test embed \
             \n \
             \n Permanent Commands: \
             \n ${billwurtz.padEnd(padding, '.')}links to a specified bill wurtz website \
@@ -81,14 +85,13 @@ module.exports = {
             \n ${helpStr.padEnd(padding, '.')}prints out this menu \
             \n ${hotewig.padEnd(padding, '.')}history of the entire world, i guess \
             \n ${lazer.padEnd(padding, '.')}a deadly lazer \
-            \n ${legbone.padEnd(padding, '.')}the leg bone \
-            
             \n \
             \n Page 1/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\``);
         }else if(args[0] === '2'){
             message.channel.send(`\`\`\` \
+            \n ${legbone.padEnd(padding, '.')}the leg bone \
             \n ${mental.padEnd(padding, '.')}it's a mental breakdown \
             \n ${neckbone.padEnd(padding, '.')}the neck bone \
             \n ${no.padEnd(padding, '.')}why not? \
@@ -109,14 +112,14 @@ module.exports = {
             \n\t\t\t\t\t from bill wurtz, carson, or pakalu papito \
             \n ${what.padEnd(padding, '.')}what \
             \n ${wiggle.padEnd(padding, '.')}prepare to wiggle :) \
-            \n ${wiggle2.padEnd(padding, '.')}like wiggle, but takes userinput \
-            \n\t\t\t\t\t in the form of <text> <duration> <amplitude> <frequency> \
             \n \
             \n Page ${args[0]}/${totalPages} \
             \n type '|help <page number>' to go to a specific page \
             \`\`\` `);
         }else if(args[0] === '3'){
             message.channel.send(` \`\`\` \
+            \n ${wiggle2.padEnd(padding, '.')}like wiggle, but takes userinput \
+            \n\t\t\t\t\t in the form of <text> <duration> <amplitude> <frequency> \
             \n ${wolfie.padEnd(padding, '.')}sends the link to wolframAlpha \
             \n ${yeehaw.padEnd(padding, '.')}yeehaw :) \
             \n \
@@ -125,27 +128,40 @@ module.exports = {
             \`\`\` `)
         }
         else if(args[0] === '4'){
-            message.channel.send(` \`\`\` \
-            \n Info: \
-            \n   Name: gneurshkbotAlpha#3939 \
-            \n   Date created: 03/11/2020, tuesday \
-            \n   Last modified: 14/11,2020, saturday \
-            \n   Source code: https://github.com/lordgneurshk/gneurshkbotAlpha \
-            \n   Total commands: 44 \
-            \n   Temporary commands: 1 \
-            \n   Permanent commands: 41 \
-            \n   Administrator commands: 2 \
-            \n   Total files: 28 \
-            \n   Total images: 12 \
-            \n   Language: english \
-            \n \
-            \n Page ${args[0]}/${totalPages} \
-            \n type '|help <page number>' to go to a specific page \
-            \`\`\` `)
+            const exampleEmbed = new MessageEmbed()
+	        .setColor('#810081')
+            .setTitle('Help 4 | Info')
+            .setAuthor('gneurshkbotAlpha', 'https://pbs.twimg.com/profile_images/1266879435220762624/9Cb4kS-P_400x400.jpg',
+            'https://github.com/lordgneurshk/gneurshkbotAlpha')
+            .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
+        	.addFields(
+                { name: '\u200B', value: ` \
+                \n\`name..................gneurshkbotAlpha#3939\` \
+                \n\`date created..............03/11/20, tuesday\` \
+                \n\`last modified..............15/11/20, sunday\` \
+                \n\`total commands...........................45\` \
+                \n\`temporary commands........................2\` \
+                \n\`permanent commands.......................41\` \
+                \n\`administrator commands....................2\` \
+                \n\`total files..............................29\` \
+                \n\`total images.............................12\` \
+                \n\`language............................english\` \
+                \n`}
+            )
+            .addFields(
+                {name: '\u200B', value: ` \
+                \nPage ${args[0]}/${totalPages} \
+                \ntype \`|help <page number>\` to go to a specific page \
+                `}
+            )
+	        .setTimestamp()
+            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+
+            message.channel.send(exampleEmbed);
         }
-        else if((args[0] === '5' || args[0] === 'admin') && message.member.hasPermission("ADMINISTRATOR")){
+        else if((args[0] === '5' || args[0] === 'admin') && message.member.hasPermission("ADMINISTRATOR") ){
             message.author.send(` \`\`\`
-            \n Admin commands: \
+            \n Administrator commands: \
             \n ${ban.padEnd(padding, '.')}bans a mentioned user \
             \n ${kick.padEnd(padding, '.')}kicks a mentioned user \
             \n \
