@@ -36,7 +36,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '1' || args[0] === 'info'){
@@ -58,7 +58,6 @@ module.exports = {
                 \n\`total files.............................................29\` \
                 \n\`total images............................................12\` \
                 \n\`language...........................................english\` \
-                \n\`|yeehaw..........................................yeehaw :)\` \
                 \n`}
             )
             .addFields(
@@ -69,7 +68,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '2' || args[0] === 'colours'){
@@ -97,7 +96,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '3'){
@@ -131,7 +130,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '4'){
@@ -165,7 +164,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '5'){
@@ -199,7 +198,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '6'){
@@ -226,7 +225,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if(args[0] === '7'){
@@ -250,7 +249,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.channel.send(helpPage);
         }else if((args[0] === '8' || args[0] === 'admin') && message.member.hasPermission("ADMINISTRATOR")){
@@ -274,7 +273,7 @@ module.exports = {
                 `}
             )
 	        .setTimestamp()
-            .setFooter('created by lordngneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
+            .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.author.send(helpPage);
         }else if(args[0] === 'tweet'){
