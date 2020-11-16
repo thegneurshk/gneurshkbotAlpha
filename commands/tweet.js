@@ -2,7 +2,7 @@ module.exports = {
     name: 'tweet',
     description: "sends tweets from certain users",
     execute(message, args){
-        const messages = ['is slef', 
+        const tweets = ['is slef', 
         `trickle down flamingoes\
         \nlet's say the flamingo lord gets an unlimited amount of flamingos,\
         \nthat means you and me will also probably get some flamingoes as well.\ `, 
@@ -27,8 +27,8 @@ module.exports = {
         `broke: trickle down economics \nwoke: piñata economics. it's like trickle down economics \
 except instead of fruitlessly waiting for the wealth to "trickle down", you beat the rich with a stick \
 until the money comes flowing out`]
-        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-        message.channel.send(randomMessage);
-        //message.channel.send(messages[messages.length - 1]);
+        const tweet = tweets[Math.floor(Math.random() * tweets.length)];
+        message.channel.send(tweet);
+        //message.channel.send(messages[tweets.length - 1]);
     }
 }
