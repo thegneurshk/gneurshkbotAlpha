@@ -23,7 +23,10 @@ module.exports = {
         `i'm not like other teenagers \ni'm 51`,
         `yeah, i've got a WAP \n \u200B \nW- \nA- :sparkles: abandonment issues :sparkles: \
         \nP-`,
-        `the tie your tooth to a doorknob trick except it pulls your whole skeleton out`]
+        `the tie your tooth to a doorknob trick except it pulls your whole skeleton out`,
+        `broke: trickle down economics \nwoke: piñata economics. it's like trickle down economics \
+except instead of fruitlessly waiting for the wealth to "trickle down", you beat the rich with a stick \
+until the money comes flowing out`]
         const randomMessage = messages[Math.floor(Math.random() * messages.length)];
         message.channel.send(randomMessage);
         //message.channel.send(messages[messages.length - 1]);
