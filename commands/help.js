@@ -150,7 +150,7 @@ module.exports = {
                 \n\`|evos..................................evil virus of satan\` \
                 \n\`|fuck.............................what are you waiting for\` \
                 \n\`|garbage................................a piece of garbage\` \
-                \n\`|gneurshk................................there's a blanket\` \
+                \n\`|gneurshk.........................................gneurshk\` \
                 \n\`|lazer......................................a deadly lazer\` \
                 \n\`|no.....................................................no\` \
                 \n\`|photosynthesis...................now you can eat sunlight\` \
@@ -213,7 +213,7 @@ module.exports = {
         	.addFields(
                 { name: '\u200B', value: ` \
                 \n\`|tumblr........................quotes a random tumblr post\` \
-                \n\`|tweet.....................use '|help tweet' for more info\` \
+                \n\`|tweet...............................quotes a random tweet\` \
                 \n\`|what.................................................what\` \
                 \n\`|wiggle..................................prepare to wiggle\` \
                 \n\`|wiggle2.................use '|help wiggle2' for more info\` \
@@ -279,9 +279,6 @@ module.exports = {
             .setFooter('created by lordgneurshk', 'https://64.media.tumblr.com/77a0542d39aaad6e3dbeb6ff5a9c9e46/tumblr_psjm9i3Fyp1u18swpo6_1280.png')
 
             message.author.send(helpPage);
-        }else if(args[0] === 'tweet'){
-            message.channel.send(`sends a tweet from bill wurtz, carson, or papito when specified \
-            \nexample: \`|tweet bill\``)
         }else if(args[0] === 'wiggle2'){
             message.channel.send(`takes inputs in order of <text> <duration> <amplitude> <frequency> and send out a custom wiggle \
             \nexample: \`|wiggle2 wiggle 12 12 12\``)
