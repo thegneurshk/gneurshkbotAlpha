@@ -149,4 +149,4 @@ client.on('message', message =>{
 });
 
 //last line
-client.login('NzY5NDQxMTE2MjEzNzM5NTUy.X5PD4Q.QlE5XW79wbYCRZuC1NtUhc4AS2M')
+client.login('')
