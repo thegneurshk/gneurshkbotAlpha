@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '|';
 const fs = require('fs');
+const { normalize } = require('path');
 
 client.commands = new Discord.Collection();
 
@@ -14,17 +15,23 @@ for(const file of commandFiles){
 
 client.once('ready', () =>{
     console.log('gneurshkbotAlpha is online');
-    client.user.setPresence({activity: {name: 'type \'|help\' for a list of commands'}, status: 'online'})
+    client.user.setPresence({activity: {name: 'type \'|help\' for a list of commands', url: 'https://github.com/lordgneurshk/gneurshkbotAlpha'}, status: 'online'})
   .then(console.log)
   .catch(console.error);
 });
 
+client.on('guildMemberAdd', message  =>{
+    const channelid = message.guild.channels.get('CHANNEL ID');
+    channelid.send('welcome to the server');
+    message.guild.channels.get('CHANNEL ID').send('welcome');
+});
+
 client.on('message', message =>{
 
-    if(!message.content.startsWith(prefix) || message.author.gneurshkbotAlpha) return;
+    if(!message.content.startsWith(prefix) || message.author.gneurshkbotAlpha || message.author.bot) return;
     //breaks if the message does not start with the prefix or if the author is a bot
 
-    const args = message.content.slice(prefix.length).split(/ +/);
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
     //splits a message after the prefix length to focus only on the command
 
     const command = args.shift().toLowerCase();
@@ -33,7 +40,11 @@ client.on('message', message =>{
     //commands
     if(command === 'election2020') {
         message.channel.send('https://www.270towin.com');
-    }else if(command === 'bill' && args[0] === 'wurtz'){
+    }else if(command === 'embed'){
+        client.commands.get('embed').execute(message, args);
+    }
+    
+    else if(command === 'bill' && args[0] === 'wurtz'){
         client.commands.get('bill wurtz').execute(message, args);
     }else if(command === 'blanket'){
         message.channel.send({files: ["./images/blanket.png"]});
@@ -119,12 +130,23 @@ client.on('message', message =>{
         message.channel.send('https://www.wolframalpha.com');
     }else if(command === 'yeehaw'){
         client.commands.get('yeehaw').execute(message, args);
-    }else if(command === 'kick' && message.member.hasPermission("ADMINISTRATOR")){
-        client.commands.get('kick').execute(message, args);
-    }else if(command === 'ban' && message.member.hasPermission("ADMINISTRATOR")){
-        client.commands.get('ban').execute(message, args);
     }
+    
+    else if(command === 'kick'){
+        if(message.member.hasPermission("ADMINISTRATOR")) {
+            client.commands.get('kick').execute(message, args);
+        }else{
+            message.channel.send('you do not have permission to use this command')
+        }
+    }else if(command === 'ban'){
+        if(message.member.hasPermission("ADMINISTRATOR")){
+            client.commands.get('ban').execute(message, args);
+        }else{
+            message.channel.send('you do not have permission to use this command')
+        }
+    }
+    
 });
 
 //last line
-client.login('');
+client.login('NzY5NDQxMTE2MjEzNzM5NTUy.X5PD4Q.QlE5XW79wbYCRZuC1NtUhc4AS2M')
