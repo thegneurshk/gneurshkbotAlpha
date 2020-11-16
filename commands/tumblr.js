@@ -2,7 +2,8 @@ module.exports = {
     name: 'tumblr',
     description: "quotes tumblr posts",
     execute(message, args){
-        const posts = [`can we all stop pretending that life is fun or even tolerable i want to start being insane in public`,
+        const posts = [
+        `can we all stop pretending that life is fun or even tolerable i want to start being insane in public`,
         `you call it really bad at darts \ni call it freestyle acupuncture`,
         'what if mayonnaise came in cans',
         'the opposite of formaldehyde is casualdejekyll',
@@ -13,7 +14,7 @@ module.exports = {
         \n well fuck me, i've got goblins in my nerves, i'm gonna do sleep deprivation about it`,
         'yike is short for yichael',
         'methamketamine',
-        `i have memorized π to exactly 0 digits \n 2`,
+        `i have memorized π to exactly 0 digits \n2`,
         'stick it to caesar by stabbing the month of july',
         'i diagnose you with horse',
         'ah, my fart cone',
@@ -61,10 +62,17 @@ module.exports = {
         `**the year is 9** \nsome motherfucker be touching cow tits, and oh boy, he\'s about to invent cereal`,
         `welcome to my yeet and greet`,
         `bone massage \ni want soft bones`,
-        `image if every signle person in the world simultaneously said \'mayonnaise\'`,
+        `image if every single person in the world simultaneously said \'mayonnaise\'`,
         `old people? more like fold people! *makes an origami swan out of grandma*`,
         `you can't spell american dream without \'eric andre\' in the middle`,
-        `remeber: you can't spell valentine's day without \'anal destiny\'`];
+        `remeber: you can't spell valentine's day without \'anal destiny\'`,
+        `went bobsleighing the other day \nkilled 59 bobs`,
+        'you know what? fuck you! *unhelps your hamburger*',
+        `you're no hamburger helper \nyou're just a hamburger hindrance`,
+        `if you're not part of the hamburger solution, you're part of the hamburger problem`,
+        `you're a hamburden on society`,
+        `my psychologist said i have an apartment complex`];
+        const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
     }
