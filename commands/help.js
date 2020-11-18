@@ -290,6 +290,9 @@ module.exports = {
         }else if(args[0] === 'minesweeper'){
             message.channel.send(`define a board size and difficulty (easy/medium/hard) \
             \nexample: \`|minesweeper 10 10 easy\``)
+        }else if(args[0] === 'bubblewrap'){
+            message.channel.send(`sends a piece of bubblewrap with specified size and text\
+            \nexample: \`|bubblewrap 10 10 pop\``)
         }else{
             message.channel.send(`no help available for that argument`)
         }
