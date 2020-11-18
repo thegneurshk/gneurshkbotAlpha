@@ -50,14 +50,14 @@ module.exports = {
                 { name: '\u200B', value: ` \
                 \n\`name.................................gneurshkbotAlpha#3939\` \
                 \n\`date created.............................03/11/20, tuesday\` \
-                \n\`last modified.............................16/11/20, monday\` \
-                \n\`total commands..........................................45\` \
+                \n\`last modified............................17/11/20, tuesday\` \
+                \n\`total commands..........................................46\` \
                 \n\`link commands...........................................11\` \
                 \n\`image commands..........................................12\` \
-                \n\`text commands...........................................18\` \
+                \n\`text commands...........................................19\` \
                 \n\`temporary commands.......................................2\` \
                 \n\`administrator commands...................................2\` \
-                \n\`total files.............................................29\` \
+                \n\`total files.............................................30\` \
                 \n\`language...........................................english\` \
                 \n`}
             )
@@ -111,7 +111,7 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
-                \n\`|bill wurtz..................'|help bill wurtz' for usage'\` \
+                \n\`|bill wurtz...................'|help bill wurtz' for usage\` \
                 \n\`|bongocat........................................bongo cat\` \
                 \n\`|carson...................................carson's twitter\` \
                 \n\`|ce.....................................casually explained\` \
@@ -182,14 +182,14 @@ module.exports = {
                 \n\`|calc...................................a basic calculator\` \
                 \n\`|help.................pulls up a specified page or command\` \
                 \n\`|legbone......................................the leg bone\` \
+                \n\`|minesweeper........................play minesweeper (WIP)\` \
                 \n\`|mental breakdown..................it's a mental breakdown\` \
                 \n\`|neckbone....................................the neck bone\` \
                 \n\`|ping.................................................pong\` \
                 \n\`|pong...........................................try it out\` \
                 \n\`|ra ra............................................rasputin\` \
-                \n\`|road work ahead..............................,,,,the vine\` \
+                \n\`|road work ahead..................................the vine\` \
                 \n\`|speedtest.........................it's a mental breakdown\` \
-                \n\`|test................................a simple test command\` \
                 \n`}
             )
             .addFields(
@@ -212,6 +212,7 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
+                \n\`|test................................a simple test command\` \
                 \n\`|tumblr........................quotes a random tumblr post\` \
                 \n\`|tweet...............................quotes a random tweet\` \
                 \n\`|what.................................................what\` \
@@ -286,6 +287,9 @@ module.exports = {
             message.channel.send(`when specified, links to something bw related\
             \nexamples:\n\`|bill wurtz\` \n\`|bill wurtz youtube\`\n\`|bill wurtz twitter\` \n\`|bill wurtz questions\` \
             \n\`|bill wurtz store\` \n\`|bill wurtz reddit\` \n\`|bill wurtz discord\` \n\`|bill wurtz memes\``)
+        }else if(args[0] === 'minesweeper'){
+            message.channel.send(`define a board size and difficulty (easy/medium/hard) \
+            \nexample: \`|minesweeper 10 10 easy\``)
         }else{
             message.channel.send(`no help available for that argument`)
         }
