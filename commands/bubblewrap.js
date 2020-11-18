@@ -2,36 +2,42 @@ module.exports = {
     name: 'bubblewrap',
     description: "have fun popping",
     execute(message, args){
-        len = args[0];
-        height = args[1];
-        text = args[2];
 
-        output = "";
-        if(args[2]) {
-            for (i = 0; i < height; i++) {
-                line = "";
-                for (j = 0; j < len; j++) {
-                    line += `||${text}||`;
-                }
-                output += line + "\n";
-            }
-            if(output.length > 2000) {
-                message.channel.send('exceeds 2000 character limit');
-            }else{
-                message.channel.send(output);
-            }
+        if(!args[1]){
+            message.channel.send(`make sure you have a defined length, height, and text \
+            \nuse \`|help bubblewrap\` for usage`)
         }else{
-            for (i = 0; i < height; i++) {
-                line = "";
-                for (j = 0; j < len; j++) {
-                    line += `||     ||`;
+            len = args[0];
+            height = args[1];
+            text = args[2];
+
+            output = "";
+            if(args[2]) {
+                for (i = 0; i < height; i++) {
+                    line = "";
+                    for (j = 0; j < len; j++) {
+                        line += `||${text}||`;
+                    }
+                    output += line + "\n";
                 }
-                output += line + "\n";
-            }
-            if(output.length > 2000) {
-                message.channel.send('exceeds 2000 character limit');
+                if(output.length > 2000) {
+                    message.channel.send('exceeds 2000 character limit');
+                }else{
+                    message.channel.send(output);
+                }
             }else{
-                message.channel.send(output);
+                for (i = 0; i < height; i++) {
+                    line = "";
+                    for (j = 0; j < len; j++) {
+                        line += `||     ||`;
+                    }
+                    output += line + "\n";
+                }
+                if(output.length > 2000) {
+                    message.channel.send('exceeds 2000 character limit');
+                }else{
+                    message.channel.send(output);
+                }
             }
         }
     }
