@@ -103,6 +103,8 @@ client.on('message', message =>{
         message.channel.send('i am in great pain');
     }else if(command === 'mental' && args[0] === 'breakdown'){
         message.channel.send('it\'s a mental breakdown *off key kazoo*');
+    }else if(command === 'minesweeper'){
+        client.commands.get('minesweeper').execute(message, args);
     }else if(command === 'neckbone'){
         client.commands.get('neckbone').execute(message, args);
     }else if(command === 'ping') {
@@ -115,11 +117,11 @@ client.on('message', message =>{
         message.channel.send(`uhh ya, i sure hope it does`);
     }else if(command === 'speedtest'){
         message.channel.send('your internet speed is nyoooooom');
-    }else if(command === 'test') {
-        client.commands.get('test').execute(message, args);
     }
     //text commands 2
-    else if(command === 'tumblr'){
+    else if(command === 'test') {
+        client.commands.get('test').execute(message, args);
+    }else if(command === 'tumblr'){
         client.commands.get('tumblr').execute(message, args);
     }else if(command === 'tweet'){
         client.commands.get('tweet').execute(message, args);
