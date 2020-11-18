@@ -71,7 +71,13 @@ module.exports = {
         `you're no hamburger helper \nyou're just a hamburger hindrance`,
         `if you're not part of the hamburger solution, you're part of the hamburger problem`,
         `you're a hamburden on society`,
-        `my psychologist said i have an apartment complex`];
+        `my psychologist said i have an apartment complex`,
+        `list of words containing "meow": \nmeow, meows, meowed, meowing, homeowner`,
+        `*putting honey in my tea* \nhell yeah, get in that leaf juice you sexy bee sauce`,
+        `you are under arrest for contempt of gender`,
+        'new hotline, who bling?',
+        `the greek god of hentai.... tentacles....`,
+        `cha cha real scared`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
