@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = '|';
 const fs = require('fs');
 const { normalize } = require('path');
+const config = require('./config.json');
 
 client.commands = new Discord.Collection();
 
@@ -111,15 +112,18 @@ client.on('message', message =>{
         message.channel.send('pong');
     }else if(command === 'pong'){
         message.channel.send('YOU FUCKING SON OF A BITCH THAT\'S NOT WHAT YOU\'RE SUPPOSED TO SAY!! YOU RUINED EVERYTHING');
+    }else if(command === 'quote'){
+        client.commands.get('quote').execute(message, args);
     }else if(command === 'ra' && args[0] === 'ra'){
         message.channel.send('rasputin');  
     }else if (command === 'road' && args[0]==='work' && args[1] === 'ahead') {
         message.channel.send(`uhh ya, i sure hope it does`);
-    }else if(command === 'speedtest'){
-        message.channel.send('your internet speed is nyoooooom');
     }
+    
     //text commands 2
-    else if(command === 'test') {
+    else if(command === 'speedtest'){
+        message.channel.send('your internet speed is nyoooooom');
+    }else if(command === 'test') {
         client.commands.get('test').execute(message, args);
     }else if(command === 'tumblr'){
         client.commands.get('tumblr').execute(message, args);
@@ -161,4 +165,4 @@ client.on('message', message =>{
 });
 
 //last line
-client.login('')
+client.login(config.token);
