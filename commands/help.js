@@ -23,7 +23,7 @@ module.exports = {
                 \n\`|help 3/links.........................link commands (1-11)\` \
                 \n\`|help 4/images.......................image commands (1-12)\` \
                 \n\`|help 5/text 1.....................text commands 1  (1-12)\` \
-                \n\`|help 6/text 2.....................text commands 2 (13-18)\` \
+                \n\`|help 6/text 2.....................text commands 2 (13-20)\` \
                 \n\`|help 7/temp......................temporary commands (1-2)\` \
                 \n\`|help 8/admin.................administrator commands (1-2)\` \
                 \n`}
@@ -51,13 +51,13 @@ module.exports = {
                 \n\`name.................................gneurshkbotAlpha#3939\` \
                 \n\`date created.............................03/11/20, tuesday\` \
                 \n\`last modified............................17/11/20, tuesday\` \
-                \n\`total commands..........................................46\` \
+                \n\`total commands..........................................47\` \
                 \n\`link commands...........................................11\` \
                 \n\`image commands..........................................12\` \
-                \n\`text commands...........................................19\` \
+                \n\`text commands...........................................20\` \
                 \n\`temporary commands.......................................2\` \
                 \n\`administrator commands...................................2\` \
-                \n\`total files.............................................30\` \
+                \n\`total files.............................................31\` \
                 \n\`language...........................................english\` \
                 \n`}
             )
@@ -187,9 +187,9 @@ module.exports = {
                 \n\`|neckbone....................................the neck bone\` \
                 \n\`|ping.................................................pong\` \
                 \n\`|pong...........................................try it out\` \
+                \n\`|quote................................sends a random quote\` \
                 \n\`|ra ra............................................rasputin\` \
                 \n\`|road work ahead..................................the vine\` \
-                \n\`|speedtest.........................it's a mental breakdown\` \
                 \n`}
             )
             .addFields(
@@ -212,6 +212,7 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
+                \n\`|speedtest.........................it's a mental breakdown\` \
                 \n\`|test................................a simple test command\` \
                 \n\`|tumblr........................quotes a random tumblr post\` \
                 \n\`|tweet...............................quotes a random tweet\` \
@@ -291,10 +292,10 @@ module.exports = {
             message.channel.send(`define a board size and difficulty (easy/medium/hard) \
             \nexample: \`|minesweeper 10 10 easy\``)
         }else if(args[0] === 'bubblewrap'){
-            message.channel.send(`sends a piece of bubblewrap with specified size and text, text input is optional and can be left blank\
+            message.channel.send(`sends a piece of bubblewrap with specified size and text, the text input is optional and can be left blank\
             \nexample: \`|bubblewrap 10 10 pop\``)
         }else{
-            message.channel.send(`no help available for that argument`)
+            message.channel.send(`no help available for that command`)
         }
         
     }
