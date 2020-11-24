@@ -77,7 +77,14 @@ module.exports = {
         `you are under arrest for contempt of gender`,
         'new hotline, who bling?',
         `the greek god of hentai.... tentacles....`,
-        `cha cha real scared`];
+        `cha cha real scared`,
+        `horses are michievous and only appear nice \
+        \ndo not trust the sinful wagon giraffes`,
+        `my joints are a retractable ballpoint pen and god is going clickclickclickclick`,
+        `accused of dislikos peepee \n"i hate the taste"`,
+        `i scream you scream we all \nrepress memories of our childhood`,
+        `she dicked cockily down stairs`,
+        `if she's your girl why is she breasting boobily down my stairs`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
