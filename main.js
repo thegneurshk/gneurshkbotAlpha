@@ -93,7 +93,9 @@ client.on('message', message =>{
     }
     
     //text commands 1
-    else if(command === 'bubblewrap'){
+    else if(command === 'bc'){
+        client.commands.get('bc').execute(message, args);
+    }else if(command === 'bubblewrap'){
         client.commands.get('bubblewrap').execute(message, args);
     }else if(command === 'calc'){
         client.commands.get('calc').execute(message, args);
@@ -116,12 +118,12 @@ client.on('message', message =>{
         client.commands.get('quote').execute(message, args);
     }else if(command === 'ra' && args[0] === 'ra'){
         message.channel.send('rasputin');  
-    }else if (command === 'road' && args[0]==='work' && args[1] === 'ahead') {
-        message.channel.send(`uhh ya, i sure hope it does`);
     }
-    
+
     //text commands 2
-    else if(command === 'speedtest'){
+    else if (command === 'road' && args[0]==='work' && args[1] === 'ahead') {
+        message.channel.send(`uhh ya, i sure hope it does`);
+    }else if(command === 'speedtest'){
         message.channel.send('your internet speed is nyoooooom');
     }else if(command === 'test') {
         client.commands.get('test').execute(message, args);
