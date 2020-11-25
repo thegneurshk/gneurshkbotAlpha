@@ -23,7 +23,7 @@ module.exports = {
                 \n\`|help 3/links.........................link commands (1-11)\` \
                 \n\`|help 4/images.......................image commands (1-12)\` \
                 \n\`|help 5/text 1.....................text commands 1  (1-12)\` \
-                \n\`|help 6/text 2.....................text commands 2 (13-20)\` \
+                \n\`|help 6/text 2.....................text commands 2 (13-21)\` \
                 \n\`|help 7/temp......................temporary commands (1-2)\` \
                 \n\`|help 8/admin.................administrator commands (1-2)\` \
                 \n`}
@@ -51,13 +51,13 @@ module.exports = {
                 \n\`name.................................gneurshkbotAlpha#3939\` \
                 \n\`date created.............................03/11/20, tuesday\` \
                 \n\`last modified............................17/11/20, tuesday\` \
-                \n\`total commands..........................................47\` \
+                \n\`total commands..........................................48\` \
                 \n\`link commands...........................................11\` \
                 \n\`image commands..........................................12\` \
-                \n\`text commands...........................................20\` \
+                \n\`text commands...........................................21\` \
                 \n\`temporary commands.......................................2\` \
                 \n\`administrator commands...................................2\` \
-                \n\`total files.............................................31\` \
+                \n\`total files.............................................32\` \
                 \n\`language...........................................english\` \
                 \n`}
             )
@@ -178,6 +178,7 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
+                \n\`|bc..................................bifflyborp compersant\` \
                 \n\`|bubblewrap...............................have fun popping\` \
                 \n\`|calc...................................a basic calculator\` \
                 \n\`|help.................pulls up a specified page or command\` \
@@ -189,7 +190,6 @@ module.exports = {
                 \n\`|pong...........................................try it out\` \
                 \n\`|quote................................sends a random quote\` \
                 \n\`|ra ra............................................rasputin\` \
-                \n\`|road work ahead..................................the vine\` \
                 \n`}
             )
             .addFields(
@@ -212,6 +212,7 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
+                \n\`|road work ahead..................................the vine\` \
                 \n\`|speedtest.........................it's a mental breakdown\` \
                 \n\`|test................................a simple test command\` \
                 \n\`|tumblr........................quotes a random tumblr post\` \
