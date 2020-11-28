@@ -6,8 +6,12 @@ module.exports = {
         const target = mentions.users.first();
         if(target) {
             const targetMember = message.guild.members.cache.get(target.id);
-            targetMember.ban();
-            message.channel.send(`${targetMember} has been banned`)
+            if(targetMember != message.member.id){
+                targetMember.ban();
+                message.channel.send(`${targetMember} has been banned`)
+            }else{
+                message.channel.send(`you can't ban yourself`)
+            }
         }else{
             message.channel.send(`please specify a user to ban`);
         }
