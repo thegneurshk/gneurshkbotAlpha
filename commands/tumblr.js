@@ -65,7 +65,7 @@ module.exports = {
         `image if every single person in the world simultaneously said \'mayonnaise\'`,
         `old people? more like fold people! *makes an origami swan out of grandma*`,
         `you can't spell american dream without \'eric andre\' in the middle`,
-        `remeber: you can't spell valentine's day without \'anal destiny\'`,
+        `remember: you can't spell valentine's day without \'anal destiny\'`,
         `went bobsleighing the other day \nkilled 59 bobs`,
         'you know what? fuck you! *unhelps your hamburger*',
         `you're no hamburger helper \nyou're just a hamburger hindrance`,
@@ -84,7 +84,11 @@ module.exports = {
         `accused of dislikos peepee \n"i hate the taste"`,
         `i scream you scream we all \nrepress memories of our childhood`,
         `she dicked cockily down stairs`,
-        `if she's your girl why is she breasting boobily down my stairs`];
+        `if she's your girl why is she breasting boobily down my stairs`,
+        `you wouldn't download a goat`,
+        `she wear snort snirt, i wear sneep snop`,
+        `an atrocity a day keeps god at bay`,
+        `she took the tapeworm in the divorce`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
