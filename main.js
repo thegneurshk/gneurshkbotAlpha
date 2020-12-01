@@ -106,8 +106,6 @@ client.on('message', message =>{
         message.channel.send('i am in great pain');
     }else if(command === 'mental' && args[0] === 'breakdown'){
         message.channel.send('it\'s a mental breakdown *off key kazoo*');
-    }else if(command === 'minesweeper'){
-        client.commands.get('minesweeper').execute(message, args);
     }else if(command === 'neckbone'){
         client.commands.get('neckbone').execute(message, args);
     }else if(command === 'ping') {
@@ -118,12 +116,12 @@ client.on('message', message =>{
         client.commands.get('quote').execute(message, args);
     }else if(command === 'ra' && args[0] === 'ra'){
         message.channel.send('rasputin');  
+    }else if (command === 'road' && args[0]==='work' && args[1] === 'ahead') {
+        message.channel.send(`uhh ya, i sure hope it does`);
     }
 
     //text commands 2
-    else if (command === 'road' && args[0]==='work' && args[1] === 'ahead') {
-        message.channel.send(`uhh ya, i sure hope it does`);
-    }else if(command === 'speedtest'){
+    else if(command === 'speedtest'){
         message.channel.send('your internet speed is nyoooooom');
     }else if(command === 'test') {
         client.commands.get('test').execute(message, args);
@@ -143,9 +141,7 @@ client.on('message', message =>{
     }
 
     //temp commands
-    else if(command === 'election2020') {
-        message.channel.send('https://www.270towin.com');
-    }else if(command === 'embed'){
+    else if(command === 'embed'){
         client.commands.get('embed').execute(message, args);
     }
 
