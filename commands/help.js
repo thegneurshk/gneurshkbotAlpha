@@ -50,14 +50,14 @@ module.exports = {
                 { name: '\u200B', value: ` \
                 \n\`name.................................gneurshkbotAlpha#3939\` \
                 \n\`date created.............................03/11/20, tuesday\` \
-                \n\`last modified............................17/11/20, tuesday\` \
-                \n\`total commands..........................................48\` \
+                \n\`last modified............................01/12/20, tuesday\` \
+                \n\`total commands..........................................46\` \
                 \n\`link commands...........................................11\` \
                 \n\`image commands..........................................12\` \
-                \n\`text commands...........................................21\` \
-                \n\`temporary commands.......................................2\` \
+                \n\`text commands...........................................20\` \
+                \n\`temporary commands.......................................1\` \
                 \n\`administrator commands...................................2\` \
-                \n\`total files.............................................32\` \
+                \n\`total files.............................................31\` \
                 \n\`language...........................................english\` \
                 \n`}
             )
@@ -183,13 +183,13 @@ module.exports = {
                 \n\`|calc...................................a basic calculator\` \
                 \n\`|help.................pulls up a specified page or command\` \
                 \n\`|legbone......................................the leg bone\` \
-                \n\`|minesweeper........................play minesweeper (WIP)\` \
                 \n\`|mental breakdown..................it's a mental breakdown\` \
                 \n\`|neckbone....................................the neck bone\` \
                 \n\`|ping.................................................pong\` \
                 \n\`|pong...........................................try it out\` \
                 \n\`|quote................................sends a random quote\` \
                 \n\`|ra ra............................................rasputin\` \
+                \n\`|road work ahead..................................the vine\` \
                 \n`}
             )
             .addFields(
@@ -212,7 +212,6 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
-                \n\`|road work ahead..................................the vine\` \
                 \n\`|speedtest.........................it's a mental breakdown\` \
                 \n\`|test................................a simple test command\` \
                 \n\`|tumblr........................quotes a random tumblr post\` \
@@ -243,7 +242,6 @@ module.exports = {
             .setThumbnail('https://pbs.twimg.com/profile_images/867433918286491654/zC_Zd2Fw_400x400.jpg')
         	.addFields(
                 { name: '\u200B', value: ` \
-                \n\`|election2020...................links to the current polls\` \
                 \n\`|embed..........................................test embed\` \
                 \n`}
             )
@@ -295,6 +293,8 @@ module.exports = {
         }else if(args[0] === 'bubblewrap'){
             message.channel.send(`sends a piece of bubblewrap with specified size and text, the text input is optional and can be left blank\
             \nexample: \`|bubblewrap 10 10 pop\``)
+        }else if(args[0] === 'bc'){
+            message.channel.send(`a random name generator for borkypiff cumblesnoor`)
         }else{
             message.channel.send(`no help available for that command`)
         }
