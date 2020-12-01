@@ -38,7 +38,7 @@ you have to throw 6 ravens out of the country`,
         `i diagnose you with BEES`,
         `it's time to drain the baby's swamp`,
         `the five elements are earth, water, fire, air, and ear`,
-        `prepare for floor donus`,
+        `prepare for floor donuts`,
         `ask me a purple question`,
         `let's play 'fix that spaghetti'`,
         `whatever türks your gök`,
@@ -86,7 +86,8 @@ you have to throw 6 ravens out of the country`,
         `the element of ketchup is Ke`,
         `this room smells like my mom's bread`,
         `i love to touch pianos`,
-        `suck my konnichiweiner`];
+        `suck my konnichiweiner`,
+        `it's raining anvils and pianos outside`];
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
         message.channel.send(randomQuote);
         //message.channel.send(quotes[quotes.length - 1]);
