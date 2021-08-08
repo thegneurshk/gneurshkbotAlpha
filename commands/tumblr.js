@@ -88,7 +88,10 @@ module.exports = {
         `you wouldn't download a goat`,
         `she wear snort snirt, i wear sneep snop`,
         `an atrocity a day keeps god at bay`,
-        `she took the tapeworm in the divorce`];
+        `she took the tapeworm in the divorce`,
+        `you may not sleep now, there are vegetables nearby`,
+        `fuck you *unvirgins your olive oil*`,
+        `you know what? fuck this. fuck you *unbrûlées your crème*`];
         const randomPost = posts[Math.floor(Math.random() * posts.length)];
         message.channel.send(randomPost);
         //message.channel.send(posts[posts.length - 1]);
